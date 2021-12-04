@@ -1,0 +1,19 @@
+@use '../abstracts/' as *;
+
+/* To prevent strange behavior from happening */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html{
+  /* To get the percentage divide 10px to 16px = .625 * 100 */
+  font-size:62.5%;
+}
+
+body {  
+  box-sizing: border-box;
+}
