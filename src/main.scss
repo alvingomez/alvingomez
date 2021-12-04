@@ -1,3 +1,5 @@
-html{
-    background-color: red;
-}
+@use './scss/abstracts/'as *;
+@use './components' as *;
+@use './layout/' as *;
+@use './base' as *;
+@use './pages/' as *;
