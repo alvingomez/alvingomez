@@ -1,5 +1,5 @@
 @use './scss/abstracts/'as *;
-@use './components' as *;
-@use './layout/' as *;
-@use './base' as *;
-@use './pages/' as *;
+@use './scss/components/' as *;
+@use './scss/layout/' as *;
+@use './scss/base/' as *;
+@use './scss/pages/' as *;
