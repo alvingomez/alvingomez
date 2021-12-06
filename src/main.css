@@ -1,18 +1,19 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @forward '../base/animation';
- *   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   src/scss/abstracts/_index.scss 1:1  @use
- *   src/main.scss 1:1                   root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @forward '../base/animation';\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   src/scss/abstracts/_index.scss 1:1  @use\a   src/main.scss 1:1                   root stylesheet";
+/* To prevent strange behavior from happening */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
+
+html {
+  /* To get the percentage divide 10px to 16px = .625 * 100 */
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=main.css.map */
