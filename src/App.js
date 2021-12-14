@@ -8,12 +8,12 @@ import Technology from "./pages/Technology";
 import Contact from './pages/Contact';
 import About from './pages/About';
 import NotFound from './pages/NotFound';
-import Grids from "./components/Grids";
+
 
 function App() {
   return (
     <Router>
-      <Grids />
+      
       <Sidebar />      
       <Switch>
         <Route path="/" exact={true} component={Home} />
