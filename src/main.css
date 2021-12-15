@@ -1,3 +1,9 @@
+.home {
+  display: grid;
+  grid-template-rows: 95vh min-content;
+  grid-template-columns: [sidebar-start] 12rem [sidebar-end full-start] 1fr [center-start] minmax(4rem, 1fr) repeat(8, [col-start] minmax(min-content, 10rem) [col-end]) [center-end] 1fr [full-end];
+}
+
 /* To prevent strange behavior from happening */
 *,
 *::after,
