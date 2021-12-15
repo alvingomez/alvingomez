@@ -3,7 +3,7 @@ import { useState } from "react";
 function Header() {
   const [state] = useState({
     image: {
-      monster1: "/assets/images/monster-1.png",
+      monster3: "/assets/images/monster-3.png",
     },
   });
 
@@ -12,12 +12,11 @@ function Header() {
       <div className="header">
         <div className="header__image">
           <img
-            src={state.image.monster1}
-            alt="monster blue"
-            className="header__image--monster1"
+            src={state.image.monster3}
+            alt="monster blue and pink"
+            className="header__image--monster3"
           ></img>
         </div>
-        
       </div>
       {/* End of Header */}
     </div>
