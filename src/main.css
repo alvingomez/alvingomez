@@ -1,25 +1,18 @@
-.home {
-  display: grid;
-  grid-template-rows: 95vh min-content;
-  grid-template-columns: [sidebar-start] 12rem [sidebar-end full-start] 1fr [center-start] minmax(4rem, 1fr) repeat(8, [col-start] minmax(min-content, 10rem) [col-end]) [center-end] 1fr [full-end];
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 3 | @forward './sidebar';
+ *   | ^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   src/scss/layout/_index.scss 3:1  @use
+ *   src/main.scss 3:1                root stylesheet */
 
-/* To prevent strange behavior from happening */
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 3 \2502  @forward './sidebar';\a   \2502  ^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   src/scss/layout/_index.scss 3:1  @use\a   src/main.scss 3:1                root stylesheet";
 }
-
-html {
-  /* To get the percentage divide 10px to 16px = .625 * 100 */
-  font-size: 62.5%;
-}
-
-body {
-  box-sizing: border-box;
-}
-
-/*# sourceMappingURL=main.css.map */
