@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Sidebar from "./components/Sidebar";
+// import Sidebar from "./components/Sidebar";
 import Projects from "./pages/Projects";
 import CurrentWork from "./pages/CurrentWork";
 import Resume from "./pages/Resume";
