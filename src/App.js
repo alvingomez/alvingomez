@@ -10,6 +10,7 @@ import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 
 function App() {
+  
   return (
     <Router>
       <Switch>
