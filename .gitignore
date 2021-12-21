@@ -23,5 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 yarn.lock
 main.css.map
-src/main.css
-src/main.map
+/src/main.css
+/src/main.map

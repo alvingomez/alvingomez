@@ -12,15 +12,37 @@ Add Logo
 .home {
   display: grid;
   grid-template-rows: 95vh min-content;
-  grid-template-columns: [sidebar-start] 12rem [sidebar-end full-start] 1fr [center-start] minmax(4rem, 1fr) repeat(8, [col-start] minmax(min-content, 10rem) [col-end]) [center-end] 1fr [full-end];
+  grid-template-columns: [sidebar-start] 12rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(9, [col-start] minmax(min-content, 10rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
 }
 
 .sidebar {
-  grid-column: sidebar-start/sidebar-end;
+  background-color: blueviolet;
+  grid-column: sidebar-start/sidbar-end;
+  grid-row: 1/-1;
 }
 
 .header {
-  grid-column: full-start/full-end;
+  background-color: chocolate;
+}
+.header__content {
+  grid-column: full-start/col-end 4;
+  background-color: #878dde;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header__image {
+  background-color: cadetblue;
+  grid-column: col-start 5/col-end 9;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  align-items: center;
+}
+.header__image--monster3 {
+  grid-column: 2/6;
+  grid-row: 2/6;
 }
 
 .sidebar {
