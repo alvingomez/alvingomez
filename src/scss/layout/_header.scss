@@ -1,0 +1,18 @@
+.header{
+
+
+    &__image{
+        
+        &--monster3{
+            height:133%;
+            width:auto;
+            transform: translateX(-6rem);
+            box-shadow: 0 2rem 5rem rgba(#000, .5) ;
+        }
+    }
+}
+
+/** 
+Pass data as props into the header component
+Add Logo
+**/
