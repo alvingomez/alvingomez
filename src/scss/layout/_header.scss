@@ -1,15 +1,42 @@
-.header{
+@use "../abstracts";
+.header {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(abstracts.$color-theme_monster-3-2, 0.9),
+    rgba(abstracts.$color-theme_monster-3-1, 0.9)
+  ), 
+   url(/src/texture6.jpg);
 
+  // background-size: cover;
+  // background-position: top;
 
-    &__image{
-                
-        &--monster3{
-            height:133%;
-            width:auto;
-            transform: translateX(-6rem);
-            box-shadow: 0 2rem 5rem rgba(#000, .5) ;
-        }
+  
+
+  &__texture { 
+
+    &--image {
+      height: 3rem;
+      width: auto;
     }
+  }
+
+  &__logo {
+    &--img {
+      height: 100%;
+      width: auto;
+      transform: translate(0, -2.6rem);
+    }
+  }
+
+  &__image {
+    &--monster3 {
+      height: 100%;
+      width: auto;
+      // object-fit: cover;
+      transform: translateX(-2.5rem);
+      // box-shadow: 0 4rem 3rem rgba(#000, .5) ;
+    }
+  }
 }
 
 /** 
