@@ -1,46 +1,50 @@
-.home{
+.home {
   // Grid container
-  display:grid;
+  display: grid;
   grid-template-rows: 100vh min-content;
-  grid-template-columns: [sidebar-start] 12rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(9,[col-start] minmax(min-content, 10rem)[col-end]) [center-end] minmax(6rem, 1fr) [full-end];
-  
+  grid-template-columns:
+    [sidebar-start] 12rem [sidebar-end full-start] minmax(6rem, 1fr)
+    [center-start] repeat(
+      9,
+      [col-start] minmax(min-content, 10rem) [col-end]
+    ) [center-end] minmax(6rem, 1fr)
+    [full-end];
 }
 
-.sidebar{
-  background-color: blueviolet;
+.sidebar {
+  background-color: forestgreen;
   grid-column: sidebar-start/sidbar-end;
   grid-row: 1 / -1;
 }
 
-.header{
-  background-color: chocolate;
-  
-    &__content{      
-       grid-column: full-start / col-end 4; 
-      background-color: rgb(135, 141, 222);   
-      
-      display:flex;
-      flex-direction:column;
-      justify-content:center;
-      align-items:center;
-    }
+.header {
+  grid-column: full-start/full-end;
 
+  display: grid;
+  grid-template-columns: repeat(12, minmax(5rem, 1fr));
+  grid-template-rows: repeat(8, minmax(5rem, 1fr));
 
-    &__image{
-      background-color: cadetblue;
-      grid-column:col-start 5 / col-end 9;
+  &__logo {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+  }
 
-      display:grid;
-      grid-template-columns: repeat(6, 1fr);
-      grid-template-rows: repeat(6, 1fr);
-      align-items:center;
+  &__content {
+    grid-column: 1 / 7;
+    grid-row: 3 / -1;
 
-      &--monster3{
-        grid-column: 2 / 6;  
-        grid-row: 2 / 6;
-      }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-      
-    }
-    
+  &__image {
+    grid-column: 7 / -1;
+    grid-row: 3 / -1;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
 }
