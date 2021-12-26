@@ -1,18 +1,16 @@
 import { useState } from "react";
 
-
-function Header({ heading1, heading2, heading3, children }) {
+function Header({ heading1, heading2, heading4, children }) {
   const [state] = useState({
     image: {
       monster3: "/assets/images/monster-3.png",
-      logo: "/assets/images/logo.png",      
+      logo: "/assets/images/logo.png",
     },
   });
 
   return (
     <>
       <div className="header">
-    
         <div className="header__logo">
           <img
             src={state.image.logo}
@@ -22,10 +20,12 @@ function Header({ heading1, heading2, heading3, children }) {
         </div>
 
         <div className="header__content">
-          <h3>{heading3}</h3>
-          <h1>{heading1}</h1>
-          <h2>{heading2}</h2>
-          {children}
+          <div className="heading">
+            <h4 className="heading__three">{heading4}</h4>
+            <h1 className="heading__one">{heading1}</h1>
+            <h2 className="heading__two">{heading2}</h2>
+            {children}
+          </div>
         </div>
 
         <div className="header__image header__image--background-color">
