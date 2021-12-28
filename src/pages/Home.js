@@ -17,6 +17,7 @@ function Home() {
     <div className="home">
       <Sidebar />
       <Header heading4={state.heading4} heading2={state.heading2} heading1={state.heading1}>
+        {/* Using an arrow function to bind a function to a component instance */}
       <button className="btn" onClick={() => dispatch({type:'OPEN_MODAL'})} >Check me out </button>  
       </Header>
       <Modal />

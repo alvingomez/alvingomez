@@ -22,8 +22,8 @@ function Header({ heading1, heading2, heading4, children }) {
         <div className="header__content">
           <div className="heading">
             <h4 className="heading__three">{heading4}</h4>
-            <h1 className="heading__one">{heading1}</h1>
-            <h2 className="heading__two">{heading2}</h2>
+            <h2 className="heading__two">{heading1}</h2>
+            <h1 className="heading__one">{heading2}</h1>
             {children}
           </div>
         </div>
