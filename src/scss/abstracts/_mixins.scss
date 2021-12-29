@@ -1,0 +1,16 @@
+@mixin position($position, $top, $left, $right, $bottom, $width, $height) {
+  position: $position;
+  top: $top;
+  left: $left;
+  right: $right;
+  bottom: $bottom;
+  width: $width;
+  height: $height;
+}
+
+@mixin align($display, $align-items, $justify-content, $height) {
+  display: $display;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  height: $height;
+}

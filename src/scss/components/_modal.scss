@@ -1,0 +1,17 @@
+@use '../abstracts' as *;
+
+.modal{
+    @include position(fixed, 0, 0, 0, 0, 100%, 100%);
+    background:rgba($color-theme_monster-3-2, .5);
+    
+    @include align(flex, center, center, null); 
+
+    &__body{
+        background:$color-theme_monster-3-6;
+        width:33rem;
+        height:auto;
+        padding:2rem;
+        font-size: 1.5rem;;
+    }
+}
+
