@@ -11,7 +11,7 @@ function Modal() {
     }
     return state.modalStatus ? (
         <div className='modal' onClick={close}>
-            <div className="modelBody">
+            <div className="modal__body">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Asperiores iste, reiciendis qui deserunt ipsam esse consequuntur 
                     perspiciatis voluptas accusamus, nihil commodi aperiam? 
