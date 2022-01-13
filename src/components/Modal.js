@@ -1,12 +1,13 @@
 import {useContext} from  'react';
 import ModalContext from '../context/ModalContext';
-
+import {CLOSE_MODAL} from '../context/types/ModalTypes'
+;
 function Modal() {
     const {state, dispatch} = useContext(ModalContext);
 
     const close = (e) => {
         if(e.target.getAttribute("class") === 'modal'){
-            dispatch({type:'CLOSE_MODAL'})
+            dispatch({type:CLOSE_MODAL})
         }
     }
     return state.modalStatus ? (

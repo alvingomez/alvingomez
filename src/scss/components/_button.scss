@@ -1,0 +1,16 @@
+@use '../abstracts/colors' as *;
+
+.btn-header{     
+        text-transform:uppercase;
+        text-decoration:none;
+        padding:1.5rem 4rem;
+        display:absolute;
+        padding: 1.5rem 8rem;
+        margin: 3rem 0;    
+        transform:translateY(3rem);
+
+        &:hover{
+            
+            box-shadow:0 10px 2rem rga($color-theme_monster-3-1);
+        }
+}
