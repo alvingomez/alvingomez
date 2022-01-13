@@ -1,5 +1,6 @@
 import {useState, useReducer} from 'react';
 import ModalContext from '../ModalContext';
+import ModalReducer from "../reducers/ModalReducer";
 import {OPEN_MODAL, CLOSE_MODAL} from '../types/ModalTypes';
 
 function ModalProvider(props) {
@@ -11,18 +12,7 @@ function ModalProvider(props) {
     SYNTAX:
        const [state, dispatch] = useReducer(reducer, initialArg, init) 
    **/
-    const [state, dispatch] = useReducer((state, action) => {
-        // reducer function ?
-        if(action.type === OPEN_MODAL){
-            return {modalStatus:true}
-        }
-        else if(action.type === CLOSE_MODAL){
-            return {modalStatus:false}
-        }
-        else{
-            return state;
-        }        
-    }, {modalStatus:false});
+    const [state, dispatch] = useReducer(ModalReducer, {modalStatus:false});
 
     return  (
         <ModalContext.Provider value={{state, dispatch}}>

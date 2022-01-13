@@ -2,38 +2,34 @@
 .header {
   background-image: linear-gradient(
       to right bottom,
-      rgba(abstracts.$color-theme_monster-3-2, 0.9),
-      rgba(abstracts.$color-theme_monster-3-1, 0.9)
+      rgba(abstracts.$color-theme_monster-3-2, 0.7),
+      rgba(abstracts.$color-theme_monster-3-1, 0.7)
     ),
-    url(/src/texture6.jpg);
-
-  &__texture {
-    &--image {
-      height: 3rem;
-      width: auto;
-    }
-  }
+    url(/src/texture1.jpg);
+    background-repeat:no-repeat;
 
   &__logo {
     &--img {
       height: 100%;
       width: auto;
-      transform: translate(0, -2.6rem);
+      transform: translate(7rem, -2.6rem);
     }
   }
 
   &__image {
     &--monster3 {
-      height: 115%;
+      height: 100%;
       width: auto;
-      transform: translate(3rem, -5.5rem);
+      transform: translate(5rem, -8.5rem);
       // box-shadow: 0 4rem 3rem rgba(#000, .5) ;
     }
   }
+
+  .heading{
+    padding-left:4rem
+  }
+
 }
 
-/** 
-Pass data as props into the header component
-Add Logo
-Modal
-**/
+
+
